@@ -1,3 +1,17 @@
+describe("Airport capacity", function() {
+  const CAPACITY = 2
+  var airport;
+  var plane;
+
+  beforeEach(function() {
+    airport = new Airport(CAPACITY);
+  });
+
+  it("should be able to be overridden", function() {
+    expect(airport.capacity).toEqual(CAPACITY);
+  });
+});
+
 describe("Airport", function() {
   const CAPACITY = 1;
   var airport;

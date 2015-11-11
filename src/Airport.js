@@ -1,7 +1,7 @@
-function Airport() {
-    const CAPACITY = 1;
+function Airport(capacity) {
+    const CAPACITY = 1
+    this.capacity = ((typeof capacity === 'undefined') ? CAPACITY : capacity);
 	this.planes = [];
-    this.capacity = CAPACITY;
     this.weather = typeof weather !== 'undefined' ? weather : new Weather();
 }
 
